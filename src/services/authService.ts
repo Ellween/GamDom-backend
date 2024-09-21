@@ -23,7 +23,7 @@ export const loginUser = async (username: string, password: string): Promise<str
   const user = result.rows[0];
 
   if (user && await bcrypt.compare(password, user.password)) {
-    return jwt.sign({ userId: user.user_id, username: user.username }, JWT_SECRET, { expiresIn: '1h' });
+    return jwt.sign({ userId: user.user_id, username: user.username }, JWT_SECRET, { expiresIn: '1y' });
   }
 
   return null;
