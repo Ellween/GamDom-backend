@@ -24,6 +24,14 @@ To run the project, run the following command:
 npm run dev
 ```
 
+for running tests, run the following command:
+
+```bash
+npm run test
+```
+
+it will test all the endpoints and return the coverage.
+
 users wich will be created:
 
 ```bash
