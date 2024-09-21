@@ -1,5 +1,10 @@
 To start the project, run the following command:
 
+install dependencies:
+
+```bash
+npm install
+```
 
 To create the database (postgres), run the following command:
 ```bash
